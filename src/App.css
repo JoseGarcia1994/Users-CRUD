@@ -1,0 +1,237 @@
+
+.card {
+    width: 280px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(5, 5, 5, 0.35) 0px 5px 15px;
+    padding-top: 15px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(5, 5, 5, 0.35) 5px 5px 15px;
+  }
+  
+  .card__name {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+  
+  .card__info {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .card__email {
+    width: 100%;
+    font-size: 18px;
+    color: rgb(199, 199, 204);
+  }
+  
+  .card__email-p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .card__birthday {
+    font-size: 18px;
+    color: rgb(199, 199, 204);
+  }
+  
+  .card__birthday-p{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .card__btn-container {
+    display: flex;
+    gap: 0.7rem;
+    justify-content: flex-end;
+  }
+  
+  .card__btn {
+    height: 28px;
+    border: none;
+    background-color: rgb(163, 157, 157);
+    border-radius: 3px;
+    color: rgb(61, 61, 56);
+  }
+  
+  /* =============================== FORM ================================== */
+  
+  .form__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 6, 46, 0.606);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .form {
+    border-radius: 5px;
+    width: 280px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #c3c8cf, #cbd2d9, #d3dbe3, #dce5ec, #e4eff6);
+  }
+  
+  .btn__exit-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn__exit {
+    width: 40px;
+    height: 25px;
+    border: none;
+  }
+  
+  .input__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55px;
+  }
+  
+  .input__container-radio{
+    display: flex;
+    gap: 5px;
+  
+  }
+  
+  .input__title {
+    font-size: 0.8em;
+    color: rgb(144, 160, 160);
+  }
+  
+  .input {
+    outline: none;
+    padding: 2px;
+  }
+  
+  .input:focus {
+    border-color: rgb(139, 175, 216);
+  }
+  
+  .btn__container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    width: 45%;
+    border-radius: 5px;
+  }
+  
+  /* ============================= WARNING ================================ */
+  
+  .warning__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 6, 46, 0.606);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .warning {
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .warning__title {
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .warning__btn {
+    width: 60px;
+    height: 22px;
+    background-color: rgba(6, 6, 46, 0.606);
+    color: rgb(220, 220, 220);
+    border-radius: 5px;
+  }
+  
+  .warning__btn:hover {
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+    color: rgba(6, 6, 46, 0.606);
+  }
+
+/* ============================= NO USER ================================ */
+  .noUser-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 1rem;
+  }
+
+  .user-container{
+    width: 300px;
+    height: 310px;
+  }
+
+  .user-container:hover {
+    transform: scale(1.1);
+  }
+
+  .head-user {
+    width: 180px;
+    background-color: darkgray;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    left: calc(50% - 90px);
+  }
+
+  .head-user:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  }
+
+  .body-user {
+    width: 300px;
+    height: 300px;
+    background-color: darkgray;
+    clip-path: circle(50% at 50% 98%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+  }
+
+  .body-user:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+  }
